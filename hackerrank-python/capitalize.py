@@ -25,8 +25,8 @@ import sys
 # Complete the solve function below.
 # pythonic way
 def solve(s):
-    capitalized_s = ' '.join(word.capitalize() for word in s.split(' '))
-    return ''.join(capitalized_s)
+    return ' '.join(word.capitalize() for word in s.split(' '))
+
 # non pythonic way
 def solve(s):
     nameInList = list(s)
