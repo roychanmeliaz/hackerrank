@@ -28,13 +28,13 @@ def solve(s):
     return ' '.join(word.capitalize() for word in s.split(' '))
 
 # non pythonic way
-def solve(s):
-    nameInList = list(s)
-    nameInList[0] = nameInList[0].capitalize()
-    for i, sub in enumerate(nameInList):
-        if sub==' ':
-            nameInList[i+1]=nameInList[i+1].capitalize()
-    return ''.join(nameInList)
+# def solve(s):
+#     nameInList = list(s)
+#     nameInList[0] = nameInList[0].capitalize()
+#     for i, sub in enumerate(nameInList):
+#         if sub==' ':
+#             nameInList[i+1]=nameInList[i+1].capitalize()
+#     return ''.join(nameInList)
 
 if __name__ == '__main__':
     fptr = open(os.environ['OUTPUT_PATH'], 'w')
